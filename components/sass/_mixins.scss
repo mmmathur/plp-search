@@ -1,0 +1,93 @@
+// _mixins
+// ========
+@mixin productImage($image) {
+  background: url($image) no-repeat 20% 20% ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  @media (min-width: 801px) {
+   height: 50px;
+  }
+
+  @media (max-width: 800px) {
+   height: 30px;
+  }
+
+  @media (max-width: 300px) {
+   height: 10px;
+  }
+}
+
+@mixin col-md-common {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+@mixin col-md-12 {
+  @include col-md-common();
+  @media (min-width: 992){
+    width: 100%;
+    float: left;
+  }
+}
+
+@mixin product-image {
+  @media only screen and (min-width: 41.75em){
+    width: 100%;
+    margin-right: auto;
+  }
+
+  @media only screen and (min-width: 30em){
+    width: 55%;
+    margin: auto;
+    float: none;
+    clear: both;
+    padding: 15px;
+  }
+
+}
+
+@mixin product {
+  @media only screen and (min-width: 62em){
+    width: calc(33.333% - 15px);
+  }
+
+  @media only screen and (min-width: 41.75em){
+    width: calc(33.333% - 15px);
+
+  }
+
+  @media only screen and (min-width: 30em)
+  {
+      width: calc(50% - 15px);
+  }
+
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin rule {
+
+    border-bottom: 1px solid #333;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}

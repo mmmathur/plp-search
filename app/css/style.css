@@ -1,0 +1,290 @@
+@import "http://fonts.googleapis.com/css?family=Helvetica+Neue|Arial";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Helvetica Neue", serif;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+/* app css stylesheet */
+body {
+  padding-top: 20px;
+}
+
+.products {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.col-jcp-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 992) {
+  .col-jcp-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 41.75em) {
+  .product--image {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 30em) {
+  .product--image {
+    width: 55%;
+    margin: auto;
+    float: none;
+    clear: both;
+    padding: 15px;
+  }
+}
+
+.main-margin {
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.thumb {
+  float: left;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;
+}
+
+.products .product-list {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+  margin: 6px;
+  width: 32%;
+  height: auto;
+}
+
+.product-list {
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  position: relative;
+  margin: 7.5px;
+}
+@media only screen and (min-width: 62em) {
+  .product-list {
+    width: calc(33.333% - 15px);
+  }
+}
+@media only screen and (min-width: 41.75em) {
+  .product-list {
+    width: calc(33.333% - 15px);
+  }
+}
+@media only screen and (min-width: 30em) {
+  .product-list {
+    width: calc(50% - 15px);
+  }
+}
+
+.product {
+  padding: 10px;
+  text-align: center;
+}
+
+.product-img-url {
+  width: 115px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** Detail View **/
+img.phone {
+  float: left;
+  border: 1px solid black;
+  margin-right: 3em;
+  margin-bottom: 2em;
+  background-color: white;
+  padding: 2em;
+  height: 400px;
+  width: 400px;
+}
+
+ul.phone-thumbs {
+  margin: 0;
+  list-style: none;
+}
+
+ul.phone-thumbs li {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 1em;
+  background-color: white;
+}
+
+ul.phone-thumbs img {
+  height: 100px;
+  width: 100px;
+  padding: 1em;
+}
+
+ul.specs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.specs > li {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+
+ul.specs > li > span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+ul.specs dt {
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+.ratings-off {
+  background: url("../img/star-rating-off.svg") no-repeat top;
+  width: 160px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ratings-on {
+  background: url("../img/star-rating-on.svg") no-repeat top;
+  width: 160px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.star-ratings-sprite {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  font-size: 0;
+  height: 30px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  margin: 0 auto;
+}
+.star-ratings-sprite-rating {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  background-position: 0 100%;
+  float: left;
+  height: 21px;
+  display: block;
+}
+
+.rating-count {
+  position: absolute;
+  font-size: 14px;
+  color: #666;
+  left: 287px;
+  bottom: 41%;
+  margin-right: 5px;
+}
+
+.rating-count:after {
+  content: " \203A";
+  font-size: 16px;
+}
+
+.rule {
+  border-bottom: 1px solid #333;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-list {
+  list-style: circle;
+}
+.feature-list-feature {
+  margin-left: 29%;
+  margin-right: auto;
+  text-indent: -10px;
+}
+.feature-list span {
+  position: relative;
+  left: -10px;
+}
+
+.option {
+  float: right;
+}
